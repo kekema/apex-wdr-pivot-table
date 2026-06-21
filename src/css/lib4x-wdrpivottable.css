@@ -1,0 +1,107 @@
+body:not(.apex-theme-vita-dark) #wdr-pivot-view .wdr-grid-layout div:not(.wdr-filter-header).wdr-header {
+    background-color: #fafafa;
+}
+
+/* reduce icon label font-size from 14 to 12 */
+#wdr-toolbar-wrapper #wdr-toolbar,#wdr-toolbar-wrapper #wdr-toolbar a,#wdr-toolbar-wrapper #wdr-toolbar div,#wdr-toolbar-wrapper #wdr-toolbar input,#wdr-toolbar-wrapper #wdr-toolbar li,#wdr-toolbar-wrapper #wdr-toolbar p,#wdr-toolbar-wrapper #wdr-toolbar select,#wdr-toolbar-wrapper #wdr-toolbar span,#wdr-toolbar-wrapper #wdr-toolbar table,#wdr-toolbar-wrapper #wdr-toolbar table td,#wdr-toolbar-wrapper #wdr-toolbar table th,#wdr-toolbar-wrapper #wdr-toolbar table tr,#wdr-toolbar-wrapper #wdr-toolbar textarea,#wdr-toolbar-wrapper #wdr-toolbar ul {
+    font-size: 12px;
+}
+			
+#wdr-toolbar-wrapper #wdr-toolbar>.wdr-toolbar-group-right>li>a span,#wdr-toolbar-wrapper #wdr-toolbar>li>a span {
+    top: 35px;
+}
+
+#wdr-toolbar-wrapper #wdr-toolbar a {
+    height: 60px;
+}
+
+#wdr-toolbar-wrapper {
+    height: 55px
+}
+
+#wdr-toolbar-wrapper #wdr-toolbar {
+    height: 55px;
+}
+
+#wdr-toolbar-wrapper #wdr-toolbar .wdr-toolbar-group-right:has(#lib4x-tab-fullscreen) {
+    padding-right: 0.5rem;
+}
+
+#wdr-toolbar-wrapper #wdr-toolbar .wdr-dropdown {
+    top: 55px;
+}
+
+#wdr-pivot-view .wdr-grid-layout .wdr-filters .wdr-header,#wdr-pivot-view .wdr-grid-layout.wdr-flat-view .wdr-header {
+    text-transform: none;
+}
+
+#wdr-context-menu {
+    display: none !important;
+}
+
+#wdr-pivot-view .wdr-credits {
+    padding-inline-end: 5px;
+}
+
+/* achieve a border line between the title and the sheet */
+#wdr-pivot-view #wdr-cols-sheet, #wdr-pivot-view #wdr-sheet-headers {
+    border-top: 1px solid var(--lib4x-grid-border-color, #d5d5d5); 
+}
+
+/* Region with Std Template: remove padding but (extra) padding below to accomodate the WDR logo */
+.t-Region.lib4x-wdr-pt .t-Region-body {
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    padding-block-start: 0px;
+    padding-block-end: 1.5rem;
+}
+
+/* Region with IR Template: extra bottom padding to accomodate the WDR logo */
+.t-IRR-region.lib4x-wdr-pt {
+    padding-block-end: 1.5rem;
+}
+
+/* wdr has display:none for the input from which clicks are not registered by the browser. Using opacity: 0 instead */
+#wdr-toolbar-wrapper .wdr-toolbar-ui .wdr-radio-wrap input {
+    display: inline-block;
+    opacity: 0;
+}
+
+.wdr-toolbar-ui li.is-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.dt-details-container {
+    padding-block-end: 0.5rem;
+}
+
+.dt-details-label {
+    margin-left: 10px;
+}
+
+/* IRR dt */
+.t-IRR-region.pt-dt-report {
+    --ut-link-text-color: #111;
+}
+
+body.apex-theme-vita-dark .t-IRR-region.pt-dt-report {
+    --ut-link-text-color: #F2F2F2;
+}
+
+.t-IRR-region.pt-dt-report .a-IRR-table td {
+    white-space: nowrap;
+}
+
+.t-IRR-region.pt-dt-report .a-IRR-header {
+    background-color: #dbdbdb;
+}
+
+body.apex-theme-vita-dark .t-IRR-region.pt-dt-report .a-IRR-header {
+    background-color: #515151;
+}
+
+/* Chart */
+.pt-chart.t-Region--noPadding > .t-Region-bodyWrap > .t-Region-body {
+  padding: 0.5rem 0 0 0;
+}
