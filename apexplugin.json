@@ -1,0 +1,35 @@
+{
+    "name" : "WDR Pivot Table",
+    "version" : "1.0.0",
+    "description" : "WebDataRocks wrapper plugin, enabling Pivot Tables for multi-dimensional data analysis. #lib4x",
+    "keywords" : ["WebDataRocks", "Pivot Table", "Data Analysis"],
+    "homepage" : "https://github.com/kekema/apex-wdr-pivot-table",
+    "bugs" : {
+      "url" : "https://github.com/kekema/apex-wdr-pivot-table/issues",
+      "email" : "karel0008@gmail.com"
+    },
+    "license" : "MIT",
+    "commercial" : "No",
+    "author" : {
+      "name" : "Karel Ekema",
+      "email" : "karel0008@gmail.com",
+      "url" : "https://karelekema.hashnode.dev",
+      "twitter": "@KarelEkema"
+    },
+    "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/kekema/apex-wdr-pivot-table"
+    },
+    "oracle" : {
+      "versions": ["19.0.0.0"],	
+      "apex" : {
+        "versions" : ["24.2", "26.1"],
+        "plugin" : {
+          "internalName" : "LIB4X.AXT.WDR.PIVOTTABLE",
+          "type" : "region",
+          "demo" : "https://oracleapex.com/ords/r/yola/sample-pivot-table/sales-analysis",
+          "previewImage" : "https://github.com/kekema/apex-ig-spreadsheet-view/blob/main/ig-spreadsheetview.jpg?raw=true"
+        }
+      }
+    }
+}
