@@ -1,0 +1,12 @@
+drop package lib4x_pivot_table;
+drop view lib4x_sales_v;
+drop table lib4x_fact_sales purge;
+drop table lib4x_dim_customer purge;
+drop table lib4x_dim_product purge;
+drop table lib4x_dim_subcategory purge;
+drop table lib4x_dim_category purge;
+drop table lib4x_dim_date purge;
+drop table lib4x_dim_channel purge;
+drop table lib4x_dim_salesperson purge;
+drop table lib4x_dim_country purge;
+drop table lib4x_dim_region purge;
