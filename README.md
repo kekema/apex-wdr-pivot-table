@@ -9,10 +9,9 @@ Oracle APEX is not having a native Pivot Table component but only a very limited
 
 There are several vendors in this space, like [DevExpress](https://js.devexpress.com/jQuery/pivotgrid/), [Syncfusion](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table), [Telerik](https://demos.telerik.com/kendo-ui/pivotgrid/index), [Infragistics](https://www.infragistics.com/products/ignite-ui-jquery/grids-and-lists/olap-pivot-grid), [Flexmonster](https://www.flexmonster.com/demos/js/pivot-table/), etc. In the Open Source domain, there is the [pivottable.js](https://pivottable.js.org/) component.
 
-Aim of this Github project is to set up a Proof of Concept as to integrate a third-party Pivot Table component into APEX. Using pivottable.js was one option, the other option I found was Flexmonster offering a free lightweight version of it's Pivot Table component called [WebDataRocks](https://www.webdatarocks.com/) / [Github repository](https://github.com/WebDataRocks/web-pivot-table). For the purpose, I decided to start with this one as it is probably the best refection of the effort and setup needed to integrate a third-party Pivot Table component. 
+Aim of this Github project is to set up a Proof of Concept as to integrate a third-party Pivot Table component into APEX. Using pivottable.js was one option, the other option I found was Flexmonster offering a free lightweight version of it's Pivot Table component called [WebDataRocks](https://www.webdatarocks.com/) (also see the [Github repository](https://github.com/WebDataRocks/web-pivot-table)). For the purpose, I decided to start with this one as it is probably the best refection of the effort and setup needed to integrate a third-party Pivot Table component. 
 
 Importantly, WebDataRocks is not open source. It comes as a free, ready-to-use component and it has it's dedicated [license](https://www.webdatarocks.com/license-agreement/). It requires the WebDataRocks logo/link to be visible (as you can see in the screenshot). It has a data size limitation of 1MB when loading data into a WDR widget instance. For many use cases this should be sufficient though and even makes this component interesting to use in real applications.
-
 
 
 
