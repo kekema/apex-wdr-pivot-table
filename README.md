@@ -1,5 +1,5 @@
 # apex-wdr-pivot-table
-[WebDataRocks](https://www.webdatarocks.com/) wrapper plugin, enabling Pivot Tables for multi-dimensional data analysis. Has support for APEX data source integration, primary/alternative/private reports, save/load of private reports (local storage), Drill-Through using Interactive Report (inline dialog) and connecting Charts.
+[WebDataRocks](https://www.webdatarocks.com/) wrapper plugin and sample app, enabling Pivot Tables for multi-dimensional data analysis. Has support for APEX data source integration, primary/alternative/private reports, save/load of private reports (local storage), Drill-Through using Interactive Report (inline dialog) and connecting Charts.
 
 <img width="1299" height="763" alt="image" src="https://github.com/user-attachments/assets/0d44304a-20f4-41dc-9e20-bf35222bd947" />
 
@@ -11,7 +11,5 @@ There are several vendors in this space, like [DevExpress](https://js.devexpress
 
 Aim of this Github project is to set up a Proof of Concept as to integrate a third-party Pivot Table component into APEX. Using pivottable.js was one option, the other option I found was Flexmonster offering a free lightweight version of it's Pivot Table component called [WebDataRocks](https://www.webdatarocks.com/) (also see the [Github repository](https://github.com/WebDataRocks/web-pivot-table)). For the purpose, I decided to start with this one as it is probably the best refection of the effort and setup needed to integrate a third-party Pivot Table component. 
 
-Importantly, WebDataRocks is not open source. It comes as a free, ready-to-use component and it has it's dedicated [license](https://www.webdatarocks.com/license-agreement/). It requires the WebDataRocks logo/link to be visible (as you can see in the screenshot). It has a data size limitation of 1MB when loading data into a WDR widget instance. For many use cases this should be sufficient though and even makes this component interesting to use in real applications.
-
-
+Importantly, WebDataRocks is not open source. It comes as a free, ready-to-use component and it has it's dedicated [license](https://www.webdatarocks.com/license-agreement/). It requires the WebDataRocks logo/link to be visible (as you can see in the screenshot). It has a data size limitation of 1MB when loading data into a WDR widget instance. When handling this limitation efficiently, for many use cases 1MB should be sufficient though and even makes this component interesting to use in real applications.
 
