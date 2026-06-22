@@ -195,7 +195,7 @@ Add an Interactive Report with the 'pt-dt-report' class.
 
 <img width="571" height="235" alt="image" src="https://github.com/user-attachments/assets/8e38c8aa-11f7-4395-b59d-6da8850584df" />
 
-Upon 'cell double click', the plugin will open the Inline Dialog and refresh the Interactive Report. It will populate a configured page item (here 'P2_PT_FILTERS') with details on the cell context, so you can know how to filter the data. The sample app has the LIB4X_PIVOT_TABLE package with a full example and supporting functions. 
+Upon 'cell double click', the plugin will open the Inline Dialog and refresh the Interactive Report. It will populate a configured page item (here 'P2_PT_FILTERS') with details on the cell context (as a JSON), so you can know how to filter the data. The sample app has the LIB4X_PIVOT_TABLE package with a full example and supporting functions. 
 
 <img width="1895" height="970" alt="image" src="https://github.com/user-attachments/assets/533aea04-f83d-444b-903d-88647ff418f9" />
 
@@ -210,6 +210,25 @@ and a nice check is to compare the measure with the report aggregation:
 The same cell context (as populated in 'P2_PT_FILTERS') can be used to filter data for connected Charts:
 
 <img width="1889" height="592" alt="image" src="https://github.com/user-attachments/assets/07ce4a9e-d128-435f-b52e-0df16ae46ac0" />
+
+<img width="571" height="143" alt="image" src="https://github.com/user-attachments/assets/c041d127-4583-428f-9a61-b01f364e328c" />
+
+So a supporting PL/SQL package is used to dynamically compose the queries based on the cell context filters, eg for Interactive Report:
+
+```
+  function p2_get_report_query(p_filters_page_item in varchar2) return varchar2
+  is
+    result_query varchar2(4000);  
+  begin
+    result_query := q'~
+        select *
+          from LIB4X_SALES_V
+          where (1=1)
+        ~' || get_condition(p_filters_page_item);
+   
+    return result_query;
+  end p2_get_report_query;
+```
 
 
 
