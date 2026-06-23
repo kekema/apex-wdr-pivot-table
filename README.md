@@ -3,7 +3,7 @@
 
 <img width="1299" height="763" alt="image" src="https://github.com/user-attachments/assets/0d44304a-20f4-41dc-9e20-bf35222bd947" />
 
-Oracle APEX is not having a native Pivot Table component but only a very limited Pivot View in Interactive Reports. [FR-2532](https://apexapps.oracle.com/pls/apex/apex_pm/r/ideas/details?idea=FR-2532) discusses the use case for a native component. As it stands now (June 2026), Oracle is not having any plans for a dedicated component, leaving it to the option of integrating third-party widgets:
+Oracle APEX is not having a native Pivot Table component though it has a (limited) Pivot View in Interactive Reports. [FR-2532](https://apexapps.oracle.com/pls/apex/apex_pm/r/ideas/details?idea=FR-2532) discusses the use case for a native component. As it stands now (June 2026), Oracle is not having any plans for a dedicated component, but refers to the option of integrating third-party widgets:
 
 <img alt="image" src="https://github.com/user-attachments/assets/442fe3e0-c405-4d94-a996-072e0765dac0" height="70%" width="70%" />
 
@@ -54,7 +54,7 @@ From this, you can configure the rows/columns/measures:
 
 for the default primary report. 
 
-The Initialization JavaScript functtion enables you for some further configurations like the captions to use and alternative reports:
+The Initialization JavaScript function enables you for some further configurations like the captions to use and alternative reports:
 
 ```
 function(options)
@@ -199,11 +199,11 @@ Upon 'cell double click', the plugin will open the Inline Dialog and refresh the
 
 <img width="1895" height="970" alt="image" src="https://github.com/user-attachments/assets/533aea04-f83d-444b-903d-88647ff418f9" />
 
-As you can see it has the header populated with the cell context details:
+<br>As you can see it has the header populated with the cell context details:
 
-<img width="713" height="42" alt="image" src="https://github.com/user-attachments/assets/2969b2ad-1bfe-4cce-b6c2-508fee3a38f5" />
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/2969b2ad-1bfe-4cce-b6c2-508fee3a38f5" />
 
-and a nice check is to compare the measure with the report aggregation:
+<br>and a nice check is to compare the measure with the report aggregation:
 
 <img width="408" height="186" alt="image" src="https://github.com/user-attachments/assets/313f9338-59a1-4be8-af91-7cdf06b2756a" />
 
@@ -230,7 +230,15 @@ So a supporting PL/SQL package is used to dynamically compose the queries based 
   end p2_get_report_query;
 ```
 
+<h3>Plugin versions</h3>
+Version 1.0.0 - build under APEX 24.2<br>
 
+<h3>Third-Party Software and Licenses</h3>
+
+This software uses:<br>
+[WebDataRocks](https://www.webdatarocks.com/)<br>
+Copyright 2026 [Flexmonster](https://www.flexmonster.com/)<br>
+[License](https://www.webdatarocks.com/license-agreement/) | [Project](https://github.com/WebDataRocks/web-pivot-table)
 
 
 
