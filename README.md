@@ -230,8 +230,9 @@ So a supporting PL/SQL package is used to dynamically compose the queries based 
   end p2_get_report_query;
 ```
 
-<h3>Plugin versions</h3>
-Version 1.0.0 - build under APEX 24.2<br>
+<h3>Build info</h3>
+The plugin was build under APEX 24.2.
+The sample app has install files for both 24.2 as well as 26.1.
 
 <h3>Third-Party Software and Licenses</h3>
 
