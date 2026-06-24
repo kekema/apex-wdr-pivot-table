@@ -28,7 +28,7 @@
           "internalName" : "LIB4X.AXT.WDR.PIVOTTABLE",
           "type" : "region",
           "demo" : "https://oracleapex.com/ords/r/yola/sample-pivot-table/sales-analysis",
-          "previewImage" : "https://github.com/kekema/apex-ig-spreadsheet-view/blob/main/ig-spreadsheetview.jpg?raw=true"
+          "previewImage" : "https://github.com/kekema/apex-wdr-pivot-table/blob/main/wdr-pivottable.jpg?raw=true"
         }
       }
     }
