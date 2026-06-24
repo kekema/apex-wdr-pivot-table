@@ -153,7 +153,8 @@ lib4x.axt.wdr.pivotTable = (function($) {
                                     else
                                     {
                                         // '\'' + reportName + '\' is a ' + cfgExistingReport.lib4x.type + ' report. Can only save as a private report.'
-                                        apex.message.alert(apex.lang.format(getMessage('SAVE_REPORT_WRONG_TYPE'), reportName, cfgExistingReport.lib4x.type));
+                                        // use lang.formatNoEscape as message.alert will escape
+                                        apex.message.alert(apex.lang.formatNoEscape(getMessage('SAVE_REPORT_WRONG_TYPE'), reportName, cfgExistingReport.lib4x.type));
                                     }
                                 }
                                 else
@@ -332,11 +333,12 @@ lib4x.axt.wdr.pivotTable = (function($) {
                     if (cfgReport && cfgReport.lib4x.type === 'private')
                     {
                         // 'Remove private report \'%0\'?'
-                        apex.message.confirm(apex.lang.format(getMessage('Q_REMOVE_PRIVATE_REPORT'), ptReportTitle), function(okPressed) {
+                        // use lang.formatNoEscape as message.confirm will escape
+                        apex.message.confirm(apex.lang.formatNoEscape(getMessage('Q_REMOVE_PRIVATE_REPORT'), ptReportTitle), function(okPressed) {
                             if (okPressed) {
                                 deleteReport(ptReportTitle);
                             }
-                        } );
+                        });
                     }                 
                 }
                 // if the region template is the std template and configured with hidden header but 'Show Maximize Button' checked, then
@@ -472,7 +474,7 @@ lib4x.axt.wdr.pivotTable = (function($) {
             {
                 if (filtersPageItem)
                 {
-                    apex.item(filtersPageItem).setValue(JSON.stringify(filters));   
+                    apex.item(filtersPageItem).setValue(JSON.stringify({filters: filters}));   
                 }
             }
 
