@@ -84,16 +84,16 @@ begin
     apex_javascript.add_library(
         p_name      => 'lib4x-wdrpivottable',
         p_check_to_add_minified => true,
-        p_directory => '#WORKSPACE_FILES#javascript/',          
-        --p_directory => p_plugin.file_prefix || 'js/',
+        --p_directory => '#WORKSPACE_FILES#javascript/',          
+        p_directory => p_plugin.file_prefix || 'js/',
         p_version   => NULL
     );
 
     -- this one is not having the check minified parameter
     apex_css.add_file (
         p_name => 'lib4x-wdrpivottable'||case when v('DEBUG') = 'NO' then '.min' end,
-        p_directory => '#WORKSPACE_FILES#css/'
-        --p_directory => p_plugin.file_prefix || 'css/' 
+        --p_directory => '#WORKSPACE_FILES#css/'
+        p_directory => p_plugin.file_prefix || 'css/' 
     );
 
     -- add call to init in js
