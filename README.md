@@ -205,7 +205,7 @@ Upon 'cell double click', the plugin will open the Inline Dialog and refresh the
 
 <br>and a nice check is to compare the measure with the report aggregation:
 
-<img width="30%" height="30%" alt="image" src="https://github.com/user-attachments/assets/313f9338-59a1-4be8-af91-7cdf06b2756a" />
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/313f9338-59a1-4be8-af91-7cdf06b2756a" />
 
 The same cell context (as populated in 'P2_PT_FILTERS') can be used to filter data for connected Charts:
 
