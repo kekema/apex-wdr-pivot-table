@@ -16,7 +16,7 @@ Oracle APEX is not having a native Pivot Table component though it has a (limite
 
 There are several vendors having Pivot Table component(s) in their portfolio, like [DevExpress](https://js.devexpress.com/jQuery/pivotgrid/), [Syncfusion](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table), [Telerik](https://demos.telerik.com/kendo-ui/pivotgrid/index), [Infragistics](https://www.infragistics.com/products/ignite-ui-jquery/grids-and-lists/olap-pivot-grid), [Flexmonster](https://www.flexmonster.com/demos/js/pivot-table/), etc. In the Open Source domain, there is the [pivottable.js](https://pivottable.js.org/) component.
 
-Aim of this Github project is to set up a Proof of Concept as to integrate a third-party Pivot Table component into APEX. Using pivottable.js was one option, the other option I found was Flexmonster offering a free lightweight version of it's Pivot Table component called [WebDataRocks](https://www.webdatarocks.com/) (also see the [Github repository](https://github.com/WebDataRocks/web-pivot-table)). For the purpose, I decided to start with this one as it is probably the best refection of the effort and setup needed to integrate a third-party Pivot Table component. 
+Aim of this Github project is to set up a Proof of Concept as to integrate a third-party Pivot Table component into APEX. Using pivottable.js was one option, the other option I found was Flexmonster offering a free lightweight version of it's Pivot Table component, called [WebDataRocks](https://www.webdatarocks.com/) (also see the [Github repository](https://github.com/WebDataRocks/web-pivot-table)). For the purpose, I decided to start with this one as it is probably the best refection of the effort and setup needed to integrate a third-party Pivot Table component. 
 
 Importantly, WebDataRocks is not open source. It comes as a free, ready-to-use component and it has it's dedicated [license](https://www.webdatarocks.com/license-agreement/). It requires the WebDataRocks logo/link to be visible (as you can see in the screenshot). It has a data size limitation of 1MB when loading data into a WDR widget instance. When handling this limitation efficiently, for many use cases 1MB should be sufficient though and even makes this component interesting to use in real applications.
 
@@ -202,7 +202,7 @@ Add an Interactive Report with the 'pt-dt-report' class.
 
 <img width="571" height="235" alt="image" src="https://github.com/user-attachments/assets/8e38c8aa-11f7-4395-b59d-6da8850584df" />
 
-Upon 'cell double click', the plugin will open the Inline Dialog and refresh the Interactive Report. 
+Upon 'cell double click', the plugin will open the Inline Dialog and refresh the Interactive Report. The configured 'Filters Page Item' ('P2_PT_FILTERS') is used to populate the cell context as a JSON so server-side the data can be filtered as per these filters.
 
 <img width="1895" height="970" alt="image" src="https://github.com/user-attachments/assets/533aea04-f83d-444b-903d-88647ff418f9" />
 
@@ -220,6 +220,7 @@ The same cell context (as populated in 'P2_PT_FILTERS') can be used to filter da
 
 <img width="571" height="143" alt="image" src="https://github.com/user-attachments/assets/c041d127-4583-428f-9a61-b01f364e328c" />
 
+The LIB4X_PIVOT_TABLE package in the Sample App illustrates on the query support for the several regions.
 
 <h3>Build info</h3>
 The plugin was build under APEX 24.2.
