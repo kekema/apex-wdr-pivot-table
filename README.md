@@ -220,7 +220,9 @@ The same cell context (as populated in 'P2_PT_FILTERS') can be used to filter da
 
 <img width="571" height="143" alt="image" src="https://github.com/user-attachments/assets/c041d127-4583-428f-9a61-b01f364e328c" />
 
+<p>
 The LIB4X_PIVOT_TABLE package in the Sample App illustrates on the query support for the several regions.
+</p>
 
 <h3>Build info</h3>
 The plugin was build under APEX 24.2.
