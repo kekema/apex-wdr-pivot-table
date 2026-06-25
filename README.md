@@ -3,6 +3,9 @@
 
 > ⚠️ **Important:** This repository contains only the Oracle APEX wrapper plugin (and sample app). WebDataRocks itself is not included in this repository and is loaded at runtime from the official WebDataRocks CDN. WebDataRocks is [licensed](https://www.webdatarocks.com/license-agreement) separately by [Flexmonster](https://www.flexmonster.com) and is not covered by the MIT License of this repository. Users of this plugin are responsible for complying with the WebDataRocks license terms.
 
+Blog item: [Oracle APEX - Integrating 3rd party Pivot Table functionality](https://karelekema.hashnode.dev/oracle-apex-integrating-3rd-party-pivot-table-functionality)<br/>
+Demo: [example page](https://oracleapex.com/ords/r/yola/sample-pivot-table/sales-analysis)
+
 <p>
 <img width="1299" height="763" alt="image" src="https://github.com/user-attachments/assets/0d44304a-20f4-41dc-9e20-bf35222bd947" />
 </p>
