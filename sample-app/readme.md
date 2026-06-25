@@ -1,4 +1,4 @@
-The Sample App depends on the following DB artifacts which you can create using the db/install.sql script.
+The Sample App depends on the following DB artifacts which you can create using the db/install.sql script which will also populate demo data.
 
 #### Tables
 
