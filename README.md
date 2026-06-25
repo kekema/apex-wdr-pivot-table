@@ -1,7 +1,7 @@
 # apex-wdr-pivot-table
 [WebDataRocks](https://www.webdatarocks.com/) wrapper plugin and sample app, enabling Pivot Tables for multi-dimensional data analysis. Has support for APEX data source integration, primary/alternative/private reports, save/load of private reports (local storage), Drill-Through using Interactive Report (inline dialog) and connecting Charts.
 
-> ⚠️ **Important:** This repository contains only the Oracle APEX wrapper plugin (and sample app). WebDataRocks itself is not included in this repository and is loaded at runtime from the official WebDataRocks CDN. WebDataRocks is [licensed](https://www.webdatarocks.com/license-agreement) separately by [Flexmonster](https://www.flexmonster.com) and is not covered by the MIT License of this repository. Users of this plugin are responsible for complying with the WebDataRocks license terms.
+> ⚠️ **Important:** This repository contains only the wrapper plugin (and sample app) as developed in Oracle APEX. WebDataRocks itself is not included in this repository and is loaded at runtime from the official WebDataRocks CDN. WebDataRocks is [licensed](https://www.webdatarocks.com/license-agreement) separately by [Flexmonster](https://www.flexmonster.com) and is not covered by the MIT License of this repository. Users of this plugin are responsible for complying with the WebDataRocks license terms.
 
 Blog item: [Oracle APEX - Integrating 3rd party Pivot Table functionality](https://karelekema.hashnode.dev/oracle-apex-integrating-3rd-party-pivot-table-functionality)<br/>
 Demo: [example page](https://oracleapex.com/ords/r/yola/sample-pivot-table/sales-analysis)
